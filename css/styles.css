@@ -14,11 +14,43 @@
       background-color: #f8f8f8;
       background-image: radial-gradient(circle at 82% 18%, rgba(182, 90, 157, 0.24) 0%, transparent 38%),
                         radial-gradient(circle at 8% 82%, rgba(62, 87, 173, 0.18) 0%, transparent 46%),
-                        radial-gradient(circle at 58% 62%, rgba(185, 223, 58, 0.12) 0%, transparent 30%);
+                        radial-gradient(circle at 58% 62%, rgba(184, 229, 47, 0.14) 0%, transparent 30%);
     }
     .custom-hard-shadow {
       box-shadow: 0 4px 0 #20242c;
     }
     .custom-card-shadow {
       box-shadow: 0 12px 32px -4px rgba(17, 17, 17, 0.05);
+    }
+    .services-grid > div:nth-child(1) {
+      background: #3e57ad;
+      color: #ffffff;
+      border-color: #3e57ad;
+    }
+    .services-grid > div:nth-child(2) {
+      background: #ffffff;
+      border: 2px solid #a77af0;
+    }
+    .services-grid > div:nth-child(3) {
+      background: #b65a9d;
+      color: #ffffff;
+      border-color: #b65a9d;
+    }
+    .services-grid > div:nth-child(4) {
+      background: #b8e52f;
+      border-color: #b8e52f;
+    }
+    .services-grid > div:nth-child(5) {
+      background: #20242c;
+      color: #ffffff;
+      border-color: #20242c;
+    }
+    .services-grid > div:nth-child(6) {
+      background: #ffdf27;
+      border-color: #ffdf27;
+    }
+    .services-grid > div:nth-child(-n+6) p,
+    .services-grid > div:nth-child(-n+6) h3,
+    .services-grid > div:nth-child(-n+6) span {
+      color: inherit;
     }

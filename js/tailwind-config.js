@@ -7,7 +7,7 @@ tailwind.config = {
             "on-surface-variant": "#3E57AD",
             "surface-light-gray": "#F3F4F7",
             "surface-container-lowest": "#FFFFFF",
-            "tertiary-container": "#B9DF3A",
+            "tertiary-container": "#B8E52F",
             "surface-variant": "#E8EAF2",
             "primary-fixed": "#AEB9EC",
             "on-primary-container": "#1E2D78",
