@@ -1,0 +1,1040 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Backyard Studio | Contenido que conecta</title>
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body
+  class="bg-surface text-on-surface antialiased font-body-md selection:bg-pure-black selection:text-primary-container">
+  <!-- TopNavBar (Shared Component from JSON) -->
+  <header class="bg-pure-black border-b border-surface-dark-subtle shadow-md sticky top-0 z-50">
+    <div
+      class="sticky top-0 z-50 flex items-center justify-between w-full px-margin-mobile md:px-margin max-w-7xl mx-auto h-20">
+      <!-- Logo Branding Anchor -->
+      <a class="flex items-center gap-3 group" href="#hero">
+        <div
+          class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center font-display-hero text-headline-md font-black text-pure-black">
+          M
+        </div>
+        <div class="flex flex-col">
+          <span
+            class="text-headline-md font-headline-md font-extrabold text-on-primary uppercase tracking-tight">Backyard</span>
+          <span
+            class="text-label-sm font-label-sm text-surface-variant font-medium tracking-normal -mt-1 hidden sm:inline">Agencia
+            Studio creativo digital</span>
+        </div>
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-primary-container font-bold border-b-2 border-primary-container pb-1 text-label-lg font-label-lg"
+          href="#hero">Inicio</a>
+        <a class="text-on-primary font-label-lg hover:text-primary-container transition-colors duration-200"
+          href="#servicios">Servicios</a>
+        <a class="text-on-primary font-label-lg hover:text-primary-container transition-colors duration-200"
+          href="#metodo">Método</a>
+        <a class="text-on-primary font-label-lg hover:text-primary-container transition-colors duration-200"
+          href="#clientes">Clientes</a>
+        <a class="text-on-primary font-label-lg hover:text-primary-container transition-colors duration-200"
+          href="#testimonios">Testimonios</a>
+      </nav>
+      <!-- Trailing Action Badges & CTAs -->
+      <div class="flex items-center gap-3">
+        <!-- Mobile Navigation Toggle -->
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-surface-dark-subtle text-on-primary hover:text-primary-container transition-colors"
+          id="mobile-menu-toggle" type="button">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <!-- WhatsApp CTA -->
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-dark hover:bg-surface-dark-subtle text-on-primary font-label-lg text-body-sm transition-all border border-surface-dark-subtle"
+          href="https://wa.me/51938153422?text=%C2%A1Hola%20Backyard%20Studio!%20Quiero%20conocer%20sus%20servicios"
+          rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-yellow-accent text-body-md">chat</span>
+          WhatsApp
+        </a>
+        <!-- Agendar Cita (Primary Action) -->
+        <a class="inline-flex items-center justify-center bg-primary-container hover:bg-yellow-deep text-pure-black font-label-lg text-label-lg uppercase px-5 py-2.5 rounded-lg transition-transform active:scale-95 custom-hard-shadow font-extrabold tracking-wide"
+          href="#citas">
+          Hablemos
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Navigation -->
+  <nav aria-label="Navegación móvil" class="hidden md:hidden bg-pure-black border-t border-surface-dark-subtle"
+    id="mobile-menu">
+    <div class="px-margin-mobile py-4 flex flex-col gap-2">
+      <a class="mobile-menu-link text-primary-container font-bold px-3 py-2 rounded-lg bg-surface-dark"
+        href="#hero">Inicio</a>
+      <a class="mobile-menu-link text-on-primary hover:text-primary-container px-3 py-2 rounded-lg"
+        href="#servicios">Servicios</a>
+      <a class="mobile-menu-link text-on-primary hover:text-primary-container px-3 py-2 rounded-lg"
+        href="#metodo">Método</a>
+      <a class="mobile-menu-link text-on-primary hover:text-primary-container px-3 py-2 rounded-lg"
+        href="#clientes">Clientes</a>
+      <a class="mobile-menu-link text-on-primary hover:text-primary-container px-3 py-2 rounded-lg"
+        href="#testimonios">Testimonios</a>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-bg-pattern relative w-full pt-space-xl pb-space-3xl overflow-hidden border-b border-pure-black"
+    id="hero">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 flex flex-col justify-center text-pure-black">
+          <div
+            class="inline-flex items-center gap-2 bg-pure-black text-primary-container px-4 py-1.5 rounded-full text-label-sm font-label-sm font-bold w-fit mb-6 shadow-sm uppercase tracking-wider">
+            <span class="material-symbols-outlined text-sm font-bold">auto_awesome</span> Estudio de creación digital
+          </div>
+          <h1
+            class="font-display-hero text-headline-xl md:text-display-hero tracking-tight leading-none uppercase font-black text-pure-black mb-4">
+            ¿Tu marca <br />
+            <span class="relative inline-block text-pure-black">
+              NECESITA
+              <svg class="absolute -bottom-2 left-0 w-full h-3 text-pure-black fill-current" preserveaspectratio="none"
+                viewbox="0 0 100 20">
+                <path d="M0 10 Q 50 20 100 10 Q 50 0 0 10 Z"></path>
+              </svg>
+            </span><br />
+            <span class="text-headline-lg md:text-headline-xl font-extrabold">una mejor historia?</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-surface-dark font-medium max-w-xl mb-8 mt-2 leading-relaxed">
+            Creamos contenido, identidad y experiencias digitales que hacen que tu marca se vea, se entienda y se recuerde.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a class="inline-flex items-center justify-center bg-pure-black hover:bg-surface-dark text-on-primary font-label-lg text-label-lg uppercase px-7 py-4 rounded-lg transition-all custom-hard-shadow font-black tracking-wider"
+              href="#citas">
+              Quiero crear contigo
+              <span class="material-symbols-outlined ml-2 text-primary-container">arrow_forward</span>
+            </a>
+            <a class="inline-flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur hover:bg-surface-container-lowest text-pure-black border-2 border-pure-black font-label-lg text-label-lg uppercase px-7 py-4 rounded-lg transition-all font-bold"
+              href="#servicios">
+              Ver lo que hacemos
+            </a>
+          </div>
+          <!-- Micro Metric Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-10 mt-8 border-t border-pure-black/20 max-w-lg">
+            <div>
+              <p class="font-headline-lg text-headline-lg font-black text-pure-black leading-none">6</p>
+              <p class="text-label-sm font-label-sm text-surface-dark font-semibold mt-1">Servicios creativos</p>
+            </div>
+            <div>
+              <p class="font-headline-lg text-headline-lg font-black text-pure-black leading-none">100%</p>
+              <p class="text-label-sm font-label-sm text-surface-dark font-semibold mt-1">Hecho a medida</p>
+            </div>
+            <div>
+              <p class="font-headline-lg text-headline-lg font-black text-pure-black leading-none">1</p>
+              <p class="text-label-sm font-label-sm text-surface-dark font-semibold mt-1">Equipo aliado</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Character Visual Representation -->
+        <div class="lg:col-span-5 flex justify-center relative">
+          <div
+            class="relative w-full max-w-md aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border-4 border-pure-black bg-surface-dark custom-hard-shadow flex items-center justify-center">
+            <img class="w-full h-full object-cover"
+              data-alt="Editorial image representing a creative studio, visual storytelling and content production."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2reenJBirt61eDltUFYRdquCBLBlKwlDQMxAGiDkxs-7usjDnAu4AtRXtcZm8avUftSLZnrdoeKolBXRbmHIfcXJgYxcic26un5tTUSKERcxhbkPzoLhiRMefy_UPkJOWYmuiMu6Po9x4cJJUTdVm4GxXgHrXZDTD0GezTF3LsRyhr4sOQJJ6j60o7ONKB-7-7FPjh0_X0DX1lxVHSrvu7sr5OfPwVBZMRsvQLwF9IGD0KXcGWnMI" />
+            <div
+              class="absolute bottom-4 left-4 right-4 bg-pure-black/90 backdrop-blur-md p-4 rounded-xl border border-primary-container/40 flex items-center justify-between">
+              <div>
+                <p class="text-primary-container text-label-sm font-bold uppercase">Enfoque creativo</p>
+                <p class="text-on-primary text-body-sm font-semibold">Convertimos ideas en historias visuales</p>
+              </div>
+              <span class="material-symbols-outlined text-primary-container text-headline-md">visibility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Servicios Section: ¿Sabes por dónde empezar? -->
+  <section class="py-space-3xl bg-surface-container-lowest" id="servicios">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+        <span
+          class="inline-block px-3 py-1 rounded-full bg-primary-container/30 border border-primary-container text-pure-black font-label-sm font-bold mb-3 uppercase tracking-wider">
+          Lo que hacemos
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
+          Ideas que toman forma
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
+          Unimos estrategia, dirección de arte y producción para construir una presencia digital con personalidad.
+        </p>
+      </div>
+      <!-- Bento-style Service Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1: UX/UI -->
+        <div
+          class="bg-surface-container-lowest border border-border-subtle rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-lg flex flex-col justify-between group">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container/30 border border-primary-container flex items-center justify-center text-pure-black mb-6 group-hover:bg-primary-container transition-colors">
+              <span class="material-symbols-outlined text-headline-md font-bold">desktop_windows</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Producción de video
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              En estos nuevos tiempos de contacto virtual, nuestro sitio web será la única cara que muchos clientes vean
+              de nuestra empresa/marca. ¿Qué quisieras que piensen al verla? Déjalo en nuestras manos.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Cotizar web
+              <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 2: e-Commerce -->
+        <div
+          class="bg-surface-container-lowest border border-border-subtle rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-lg flex flex-col justify-between group">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container/30 border border-primary-container flex items-center justify-center text-pure-black mb-6 group-hover:bg-primary-container transition-colors">
+              <span class="material-symbols-outlined text-headline-md font-bold">shopping_cart</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Diseño gráfico y branding
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Desarrollamos tu tienda virtual con el mejor ratio de conversión a ventas. Optimizadas, con estrategias
+              SEO, reducción de velocidad de carga, funcionalidades especiales, o la ruta de éxito que necesites.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Maximizar ventas
+              <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 3: Social Media -->
+        <div
+          class="bg-surface-container-lowest border border-border-subtle rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-lg flex flex-col justify-between group">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container/30 border border-primary-container flex items-center justify-center text-pure-black mb-6 group-hover:bg-primary-container transition-colors">
+              <span class="material-symbols-outlined text-headline-md font-bold">share</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Estrategia de contenidos
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              No se trata de conseguir más likes o corazones. Analizamos tu marca, encontramos tu audiencia y creamos
+              comunicación efectiva para lograr el correcto objetivo en cada red social donde debes estar.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Diseñar pauta
+              social <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 4: Meta Ads -->
+        <div
+          class="bg-surface-container-lowest border-2 border-primary-container rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-xl flex flex-col justify-between group bg-gradient-to-b from-primary-container/10 to-transparent">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container border border-pure-black flex items-center justify-center text-pure-black mb-6">
+              <span class="material-symbols-outlined text-headline-md font-bold">ads_click</span>
+            </div>
+            <div
+              class="inline-block bg-pure-black text-primary-container text-label-sm font-bold px-2 py-0.5 rounded mb-2">
+              Campañas que conectan</div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Publicidad en Meta Ads
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Diseñamos campañas y piezas que llevan tu historia a las personas correctas, con una estrategia clara y medible.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Dominar
+              búsquedas <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 5: Branding -->
+        <div
+          class="bg-surface-container-lowest border border-border-subtle rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-lg flex flex-col justify-between group">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container/30 border border-primary-container flex items-center justify-center text-pure-black mb-6 group-hover:bg-primary-container transition-colors">
+              <span class="material-symbols-outlined text-headline-md font-bold">palette</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Gestión de redes sociales
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Eleva la percepción de valor de tu marca. Desde el nacimiento de tu marca, concepto creativo, nombre, logo
+              e identidad visual. Deja que juntos demos vida a tu sueño.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Construir marca
+              <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 6: Apps -->
+        <div
+          class="bg-surface-container-lowest border border-border-subtle rounded-xl p-space-xl transition-all duration-200 hover:border-pure-black hover:shadow-lg flex flex-col justify-between group">
+          <div>
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container/30 border border-primary-container flex items-center justify-center text-pure-black mb-6 group-hover:bg-primary-container transition-colors">
+              <span class="material-symbols-outlined text-headline-md font-bold">phone_iphone</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-extrabold text-pure-black mb-3">
+              Fotografía para redes
+            </h3>
+            <p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Una aplicación móvil es tu marca en la mano de tus clientes. Diseñamos y desarrollamos sistemas para
+              aplicaciones IOS, Android y PWA, utilizando las últimas metodologías ágiles.
+            </p>
+          </div>
+          <div
+            class="pt-6 mt-6 border-t border-border-subtle flex items-center text-pure-black font-label-lg font-bold">
+            <span class="group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Crear app nativa
+              <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span></span>
+          </div>
+        </div>
+        <!-- Service 7: Full Plan (Spans Across) -->
+        <div
+          class="md:col-span-2 lg:col-span-3 bg-surface-dark text-on-primary rounded-xl p-space-xl border-2 border-primary-container flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-6">
+            <div
+              class="w-16 h-16 rounded-xl bg-primary-container flex-shrink-0 flex items-center justify-center text-pure-black">
+              <span class="material-symbols-outlined text-headline-md font-bold">query_stats</span>
+            </div>
+            <div>
+              <span class="text-primary-container text-label-sm font-bold uppercase tracking-wider">Estrategia
+                360°</span>
+              <h3 class="font-headline-md text-headline-md font-black text-on-primary">              Estrategia digital</h3>
+              <p class="font-body-md text-body-md text-surface-light-gray/80 mt-1 max-w-2xl">
+                Planificamos contenido, producimos piezas y gestionamos tus canales para que tu marca mantenga una presencia coherente y activa.
+              </p>
+            </div>
+          </div>
+          <a class="flex-shrink-0 bg-primary-container hover:bg-yellow-deep text-pure-black font-label-lg font-black uppercase px-6 py-3.5 rounded-lg transition-transform active:scale-95 text-center"
+            href="#citas">
+            Armar mi propuesta
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Estrategias Section: ¿Prefieres que te guiemos? -->
+  <section class="py-space-3xl bg-primary-container border-y-2 border-pure-black relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+        <h2
+          class="font-display-hero text-headline-xl md:text-headline-xl text-pure-black font-black uppercase tracking-tight">
+          ¿Prefieres que te guiemos?
+        </h2>
+        <p class="font-body-lg text-body-lg text-pure-black font-semibold mt-2">
+          Dos tipos de estrategias para aumentar tus ventas.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+        <!-- Strategy 1 -->
+        <div
+          class="bg-surface-container-lowest border-4 border-pure-black rounded-2xl p-space-xl custom-hard-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+          <div>
+            <div
+              class="w-16 h-16 rounded-full bg-pure-black text-primary-container flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-headline-md"
+                style="font-variation-settings: 'FILL' 1;">groups</span>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg font-black text-pure-black mb-3">
+              ¡Más clientes!
+            </h3>
+            <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+              Te conseguimos más clientes y hacemos que te compren más veces. Foco directo en embudos de conversión
+              rápida y captación sostenida.
+            </p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-border-subtle">
+            <a class="w-full inline-flex items-center justify-center bg-pure-black hover:bg-surface-dark text-on-primary font-label-lg uppercase py-3.5 px-4 rounded-lg font-bold"
+              href="#citas">
+              Elegir estrategia
+            </a>
+          </div>
+        </div>
+        <!-- Strategy 2 -->
+        <div
+          class="bg-surface-container-lowest border-4 border-pure-black rounded-2xl p-space-xl custom-hard-shadow flex flex-col justify-between hover:-translate-y-1 transition-transform">
+          <div>
+            <div
+              class="w-16 h-16 rounded-full bg-pure-black text-primary-container flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-headline-md"
+                style="font-variation-settings: 'FILL' 1;">sell</span>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg font-black text-pure-black mb-3">
+              ¡Más valor!
+            </h3>
+            <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+              Te ayudamos a subir tus precios mejorando la percepción de tu marca. Posicionamiento premium, autoridad
+              indiscutible y packaging de impacto.
+            </p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-border-subtle">
+            <a class="w-full inline-flex items-center justify-center bg-pure-black hover:bg-surface-dark text-on-primary font-label-lg uppercase py-3.5 px-4 rounded-lg font-bold"
+              href="#citas">
+              Elegir estrategia
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Metodología en 3 pasos -->
+  <section class="py-space-3xl bg-surface-container-lowest" id="metodo">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+        <span
+          class="inline-block px-3 py-1 rounded-full bg-surface-light-gray border border-border-subtle text-pure-black font-label-sm font-bold mb-3 uppercase tracking-wider">
+          Paso a paso estructurado
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
+          Nuestra metodología en 3 pasos
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
+          Te mostramos nuestra fórmula para tener más clientes.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <!-- Step 1 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
+          <div
+            class="w-12 h-12 rounded-full bg-primary-container text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
+            1
+          </div>
+          <div
+            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
+            <span class="material-symbols-outlined text-headline-md">lightbulb</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
+            Planifica
+          </h3>
+          <p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Te ayudamos a definir dónde estás, donde quieres llegar, con qué cuentas para llegar y juntos armamos el
+            plan.
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
+          <div
+            class="w-12 h-12 rounded-full bg-primary-container text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
+            2
+          </div>
+          <div
+            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
+            <span class="material-symbols-outlined text-headline-md">search</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
+            Que te encuentren
+          </h3>
+          <p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Quizás tengas la mejor idea de negocio, pero si nadie lo sabe ¿de qué sirve? Hacemos que quienes ya tienen
+            el problema, te encuentren como solución.
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
+          <div
+            class="w-12 h-12 rounded-full bg-primary-container text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
+            3
+          </div>
+          <div
+            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
+            <span class="material-symbols-outlined text-headline-md">verified_user</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
+            Que te busquen
+          </h3>
+          <p class="font-body-md text-body-md text-secondary leading-relaxed">
+            No hacemos que necesiten lo que vendes, hacemos que te necesiten a ti. Construimos fidelización y autoridad
+            de marca a largo plazo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Algunos de nuestros clientes (Portafolio & Brands) -->
+  <section class="py-space-3xl bg-surface-container-low border-t border-border-subtle" id="clientes">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
+          Algunos de nuestros clientes
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
+          Ellos confiaron en nosotros y ahora lo agradecen.
+        </p>
+      </div>
+      <!-- Portfolio Grid Visual -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-space-2xl">
+        <div class="group relative rounded-xl overflow-hidden border border-border-subtle bg-pure-black aspect-video">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
+            data-alt="Brand packaging and visual identity mockup created for a contemporary product."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2reenJBirt61eDltUFYRdquCBLBlKwlDQMxAGiDkxs-7usjDnAu4AtRXtcZm8avUftSLZnrdoeKolBXRbmHIfcXJgYxcic26un5tTUSKERcxhbkPzoLhiRMefy_UPkJOWYmuiMu6Po9x4cJJUTdVm4GxXgHrXZDTD0GezTF3LsRyhr4sOQJJ6j60o7ONKB-7-7FPjh0_X0DX1lxVHSrvu7sr5OfPwVBZMRsvQLwF9IGD0KXcGWnMI" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-pure-black via-transparent to-transparent flex items-end p-4">
+            <span class="text-on-primary font-label-sm font-bold text-xs uppercase">Diseño de empaque</span>
+          </div>
+        </div>
+        <div class="group relative rounded-xl overflow-hidden border border-border-subtle bg-pure-black aspect-video">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
+            data-alt="Digital interface and content system presented on multiple devices."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYQ1aZhCIk-dJp73Ee6UUYz9EMbg8xCYWFrzUCn3d_O7ShFJTtuNxr5s2ENnfMiJpzQMzrQ3r4fxzrxnxWe1GuBVDJY-7iCWQOaQZIw9qFP2Ukd0MyZW_QIaFUFzbW9XNp54_m9u87HWGsytULSmBwDQ5P86MwjkxQrO9NgeQSHKNqc2JuncmzgROYi9aJOP34dPHJ400EyQvcatxswGwNC8OoEoZY752Su1gediBCc_95bqpMH4u" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-pure-black via-transparent to-transparent flex items-end p-4">
+            <span class="text-on-primary font-label-sm font-bold text-xs uppercase">Diseño y desarrollo web</span>
+          </div>
+        </div>
+        <div class="group relative rounded-xl overflow-hidden border border-border-subtle bg-pure-black aspect-video">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
+            data-alt="Mobile content experience displayed on modern smartphones."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5A8s2Fue1gcK4hnt8Sq-k4lsRHFeQrco5T9etpV8DPLlFIJnsmpHngErFdeu9B06qLuEsEj5jv4AZEgC9Y2B0LtF_6iUiNLYdNzAJFw49LjxbCC4AhvIEgwcatjV8CaFInqA844MqiAkeaKHf0WE8N-gHfVUgzripYseMwxkflk_2foVh1t5GPA3Z9AoFPyOwBTw4GVvLE9fg6wQNem1W994E7IpnZ7KRKd_ex0hsRzZ8uvCU97Jg" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-pure-black via-transparent to-transparent flex items-end p-4">
+            <span class="text-on-primary font-label-sm font-bold text-xs uppercase">Desarrollo de aplicativo
+              móvil</span>
+          </div>
+        </div>
+        <div class="group relative rounded-xl overflow-hidden border border-border-subtle bg-pure-black aspect-video">
+          <img
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
+            data-alt="Social media campaign content kit with editorial art direction."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ3VW5C-0pVKmgNEPj8HL86lNavRmDA5eJ0b-vFKM4XldIjPQbW6E1LQ1CsdGCTFxJ_99rAPog_ZVIT-2LgGrRgJtc4Q_9yYIbd2lzwHnBGgWu5muQmzZrXR-gMa1afvepEV_gpXiYeZf3AW3H7FbV2tU5a2SPvcVNki7W3M04txyN39dVNi8mll_xJseMZcSx-lx95iFZV_uGehqJ5khhhsQ6L8w7NnNNNcW4kow-DfErF-lCBCKA" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-pure-black via-transparent to-transparent flex items-end p-4">
+            <span class="text-on-primary font-label-sm font-bold text-xs uppercase">Diseño de Social Media</span>
+          </div>
+        </div>
+      </div>
+      <!-- Client Logo Wall -->
+      <div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-border-subtle shadow-sm">
+        <p class="text-center font-label-sm text-secondary uppercase tracking-widest font-bold mb-6">
+          Proyectos pensados para verse y sentirse auténticos
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-85">
+          <span class="font-headline-md font-black tracking-tighter text-pure-black">VIDEO</span>
+          <span class="font-headline-md font-bold tracking-tight text-pure-black">BRANDING</span>
+          <span class="font-headline-md font-black tracking-wide text-pure-black">CONTENIDO</span>
+          <span class="font-headline-md font-bold italic text-pure-black">FOTOGRAFÍA</span>
+          <span class="font-headline-md font-extrabold tracking-tight text-pure-black">ESTRATEGIA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sus historias (Testimonios) -->
+  <section class="py-space-3xl bg-surface-container-lowest" id="testimonios">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+        <span
+          class="inline-block px-3 py-1 rounded-full bg-primary-container text-pure-black font-label-sm font-bold mb-3 uppercase tracking-wider">
+          El detrás de cada proyecto
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
+          Una forma de trabajar cercana
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
+          Escuchamos primero, proponemos después y cuidamos cada detalle hasta el último formato.
+        </p>
+      </div>
+      <!-- Testimonial Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              Nos involucramos en cada etapa para que la idea no se pierda entre entregables: la convertimos en una historia clara.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              WO
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Wilfredo Oscco</h4>
+              <p class="text-label-sm text-secondary">Jefe de Marketing · <strong
+                  class="text-pure-black">Rustica</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              Creamos sistemas visuales que hacen más fácil publicar, comunicar y sostener la personalidad de una marca.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              CA
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Carlos Anavitarte</h4>
+              <p class="text-label-sm text-secondary">Jefe de Marketing · <strong class="text-pure-black">Ron Estrella
+                  del Norte</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              Buscábamos un partner que pueda desarrollar a nivel tecnológico una web que cumpla los objetivos de
+              capacitación, ventas y posicionamiento digital... llegando a cumplir las metas comerciales.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              JC
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Julio Castañeda</h4>
+              <p class="text-label-sm text-secondary">Coord. Marketing Digital · <strong
+                  class="text-pure-black">Toulouse Lautrec</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 4 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              En 2020, cuando iniciamos nuestro proyecto de firmas digitales "Whatsign" para Panamá, sabíamos que una
+              buena inversión en Branding nos ayudaría a aumentar el valor. Quedamos más que contentos.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              EJ
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Eric Jethmal</h4>
+              <p class="text-label-sm text-secondary">Gerente General · <strong class="text-pure-black">Quantic
+                  Vision</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 5 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              Acompañamos la producción y gestión de contenido para que cada canal tenga una intención clara y coherente.
+              tecnológico que buscábamos para dar el siguiente salto.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              FC
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Francisco Cairo</h4>
+              <p class="text-label-sm text-secondary">Jefe de Comunicaciones · <strong class="text-pure-black">Club
+                  Alianza Lima</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 6 -->
+        <div
+          class="bg-surface border border-border-subtle rounded-xl p-space-xl flex flex-col justify-between hover:border-pure-black transition-all">
+          <div>
+            <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
+            <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
+              Desde una identidad visual hasta una campaña completa, construimos herramientas que tu equipo pueda usar.
+              redes sociales creando una nueva línea gráfica. Capturaron nuestra esencia.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center font-bold text-pure-black">
+              SV
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-pure-black">Salim Vera</h4>
+              <p class="text-label-sm text-secondary">Vocalista &amp; Líder · <strong
+                  class="text-pure-black">Libido</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fun Metrics Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-space-3xl pt-space-2xl border-t border-border-subtle">
+        <div class="text-center p-6 bg-surface-light-gray rounded-xl border border-border-subtle">
+          <span class="material-symbols-outlined text-headline-xl text-pure-black mb-2">apartment</span>
+          <p class="font-display-hero text-headline-xl font-black text-pure-black leading-none">6</p>
+          <p class="text-body-sm text-secondary font-semibold mt-2">empresas que confían en nosotros</p>
+        </div>
+        <div class="text-center p-6 bg-surface-light-gray rounded-xl border border-border-subtle">
+          <span class="material-symbols-outlined text-headline-xl text-pure-black mb-2">calendar_month</span>
+          <p class="font-display-hero text-headline-xl font-black text-pure-black leading-none">Más de 12</p>
+          <p class="text-body-sm text-secondary font-semibold mt-2">años potenciando empresas</p>
+        </div>
+        <div class="text-center p-6 bg-surface-light-gray rounded-xl border border-border-subtle">
+          <span class="material-symbols-outlined text-headline-xl text-pure-black mb-2">local_pizza</span>
+          <p class="font-display-hero text-headline-xl font-black text-pure-black leading-none">+5,400</p>
+          <p class="text-body-sm text-secondary font-semibold mt-2">pizzas pedidas en la agencia</p>
+        </div>
+        <div class="text-center p-6 bg-surface-light-gray rounded-xl border border-border-subtle">
+          <span class="material-symbols-outlined text-headline-xl text-pure-black mb-2">psychology</span>
+          <p class="font-display-hero text-headline-xl font-black text-pure-black leading-none">+9,999</p>
+          <p class="text-body-sm text-secondary font-semibold mt-2">minutos pensando qué poner aquí</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Elige un tipo de cita (Section 8) -->
+  <section class="py-space-3xl bg-surface-container-low border-t-2 border-pure-black" id="citas">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-pure-black text-primary-container font-label-sm font-extrabold uppercase tracking-widest mb-3">
+          Conversación Estratégica
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
+          Elige un tipo de cita
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
+          Da el primer paso para desbloquear el verdadero potencial de ventas de tu marca.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Opción 1: Agendar consultoría gratuita -->
+        <div
+          class="bg-surface-container-lowest border-2 border-pure-black rounded-2xl p-space-xl custom-hard-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-border-subtle mb-6">
+              <div>
+                <span class="text-label-sm font-bold text-primary-container bg-pure-black px-2.5 py-1 rounded">20 MIN DE
+                  REGALO</span>
+                <h3 class="font-headline-md text-headline-md font-black text-pure-black mt-2">
+                  ¿Tienes una idea en mente?
+                </h3>
+                <p class="font-body-md text-secondary mt-1">
+                  Cuéntanos qué quieres crear y armemos el siguiente paso.
+                </p>
+              </div>
+              <div
+                class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-pure-black flex-shrink-0">
+                <span class="material-symbols-outlined text-headline-md">support_agent</span>
+              </div>
+            </div>
+            <form class="space-y-4"
+              onsubmit="event.preventDefault(); alert('Horario seleccionado. Redirigiendo a Calendly...');">
+              <div>
+                <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu
+                  nombre</label>
+                <input
+                  class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
+                  placeholder="Ej. Carlos Mendoza" required="" type="text" />
+              </div>
+              <div>
+                <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu correo
+                  electrónico</label>
+                <input
+                  class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
+                  placeholder="carlos@empresa.com" required="" type="email" />
+              </div>
+              <div class="flex items-start gap-3 pt-2">
+                <input
+                  class="w-5 h-5 rounded border-2 border-pure-black text-primary-container focus:ring-primary-container mt-0.5"
+                  id="term1" required="" type="checkbox" />
+                <label class="text-body-sm text-secondary leading-snug" for="term1">
+                  Acepto la <a class="text-pure-black font-bold underline hover:text-primary" href="#">política de
+                    privacidad</a>.
+                </label>
+              </div>
+              <button
+                class="w-full mt-4 bg-primary-container hover:bg-yellow-deep text-pure-black font-label-lg font-black uppercase py-4 rounded-lg transition-transform active:scale-95 border-2 border-pure-black custom-hard-shadow flex items-center justify-center gap-2"
+                type="submit">
+                Escoger horario <span class="material-symbols-outlined font-bold text-body-md">calendar_today</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Opción 2: Agendar para cotizar -->
+        <div
+          class="bg-surface-container-lowest border-2 border-pure-black rounded-2xl p-space-xl custom-hard-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-border-subtle mb-6">
+              <div>
+                <span class="text-label-sm font-bold text-on-primary bg-pure-black px-2.5 py-1 rounded">REQUERIMIENTO
+                  DIRECTO</span>
+                <h3 class="font-headline-md text-headline-md font-black text-pure-black mt-2">
+                  ¿Ya tienes claro lo que necesitas?
+                </h3>
+                <p class="font-body-md text-secondary mt-1">
+                  Reunámonos para revisar tu requerimiento.
+                </p>
+              </div>
+              <div
+                class="w-14 h-14 rounded-full bg-surface-dark text-primary-container flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-headline-md">receipt_long</span>
+              </div>
+            </div>
+            <form class="space-y-4"
+              onsubmit="event.preventDefault(); alert('Requerimiento registrado. Mostrando agenda disponible...');">
+              <div>
+                <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu
+                  nombre</label>
+                <input
+                  class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
+                  placeholder="Ej. Ana Lucía Soto" required="" type="text" />
+              </div>
+              <div>
+                <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu correo
+                  electrónico</label>
+                <input
+                  class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
+                  placeholder="ana@organizacion.pe" required="" type="email" />
+              </div>
+              <div>
+                <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Servicio de
+                  interés</label>
+                <select
+                  class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium bg-surface-container-lowest">
+                  <option value="Producción de video">Producción de video</option>
+                  <option value="Diseño gráfico y branding">Diseño gráfico y branding</option>
+                  <option value="Estrategia de contenidos">Estrategia de contenidos</option>
+                  <option value="Publicidad Meta Ads">Publicidad Meta Ads</option>
+                  <option value="Gestión de redes sociales">Gestión de redes sociales</option>
+                  <option value="Fotografía para redes">Fotografía para redes</option>
+                </select>
+              </div>
+              <div class="flex items-start gap-3 pt-2">
+                <input
+                  class="w-5 h-5 rounded border-2 border-pure-black text-primary-container focus:ring-primary-container mt-0.5"
+                  id="term2" required="" type="checkbox" />
+                <label class="text-body-sm text-secondary leading-snug" for="term2">
+                  Acepto la <a class="text-pure-black font-bold underline hover:text-primary" href="#">política de
+                    privacidad</a>.
+                </label>
+              </div>
+              <button
+                class="w-full mt-4 bg-pure-black hover:bg-surface-dark text-on-primary font-label-lg font-black uppercase py-4 rounded-lg transition-transform active:scale-95 border-2 border-pure-black custom-hard-shadow flex items-center justify-center gap-2"
+                type="submit">
+                Escoger horario <span
+                  class="material-symbols-outlined font-bold text-body-md text-primary-container">calendar_today</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer (Shared Component from JSON) -->
+  <footer class="bg-surface-dark border-t border-surface-dark-subtle text-on-primary">
+    <div class="w-full px-margin-mobile md:px-margin py-space-2xl max-w-7xl mx-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-space-2xl border-b border-surface-dark-subtle">
+        <!-- Col 1: Brand & Bio -->
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-3 mb-4">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center font-black text-pure-black text-headline-sm">
+              M
+            </div>
+            <span
+              class="text-headline-lg font-headline-lg font-black text-on-primary uppercase tracking-tight">Backyard</span>
+          </div>
+          <p class="text-label-sm font-label-sm text-primary-container font-semibold uppercase tracking-wider mb-3">
+            Studio creativo digital
+          </p>
+          <p class="text-body-sm font-body-sm text-surface-light-gray/80 leading-relaxed max-w-sm mb-6">
+            Un espacio de creación digital que combina dirección de arte, producción audiovisual y estrategia para redes.
+          </p>
+          <div
+            class="inline-flex items-center gap-3 px-3.5 py-2 rounded-lg bg-pure-black border border-surface-dark-subtle">
+            <span class="material-symbols-outlined text-primary-container text-body-md"
+              style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="text-label-sm font-bold text-on-primary">Contenido con intención</span>
+          </div>
+        </div>
+        <!-- Col 2: Legales -->
+        <div class="lg:col-span-3">
+          <h4 class="text-headline-sm font-headline-sm text-on-primary mb-4 font-bold">Legales</h4>
+          <ul class="space-y-2.5">
+            <li><a
+                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
+                href="#">Política de privacidad</a></li>
+            <li><a
+                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
+                href="#">Términos y condiciones</a></li>
+            <li><a
+                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
+                href="#">Política de Cookies</a></li>
+            <li><a
+                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
+                href="#">Política de términos y condiciones de contratación</a></li>
+            <li class="pt-2">
+              <a class="inline-flex items-center gap-2 text-primary-container font-label-sm hover:underline font-bold"
+                href="#">
+                <span class="material-symbols-outlined text-sm">menu_book</span>
+                Libro de reclamaciones
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 3: Contacto -->
+        <div class="lg:col-span-3">
+          <h4 class="text-headline-sm font-headline-sm text-on-primary mb-4 font-bold">Contacto</h4>
+          <ul class="space-y-3">
+            <li>
+              <a class="text-surface-light-gray font-body-sm hover:text-primary-container transition-colors duration-200 flex items-center gap-2.5"
+                href="tel:51938153422">
+                <span class="material-symbols-outlined text-primary-container text-body-md">call</span>
+                +51 938 153 422
+              </a>
+            </li>
+            <li>
+              <a class="text-surface-light-gray font-body-sm hover:text-primary-container transition-colors duration-200 flex items-center gap-2.5"
+                href="mailto:back.yard.studio63@gmail.com">
+                <span class="material-symbols-outlined text-primary-container text-body-md">mail</span>
+                back.yard.studio63@gmail.com
+              </a>
+            </li>
+            <li>
+              <span class="text-surface-light-gray font-body-sm flex items-start gap-2.5">
+                <span
+                  class="material-symbols-outlined text-primary-container text-body-md flex-shrink-0 mt-0.5">location_on</span>
+                Lima, Perú · Trabajamos remoto y presencial
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4: Redes Sociales -->
+        <div class="lg:col-span-2">
+          <h4 class="text-headline-sm font-headline-sm text-on-primary mb-4 font-bold">Redes Sociales</h4>
+          <div class="flex flex-wrap gap-2.5 mb-6">
+            <a class="w-10 h-10 rounded-lg bg-pure-black border border-surface-dark-subtle flex items-center justify-center text-on-primary hover:text-primary-container hover:border-primary-container transition-colors"
+              href="https://www.instagram.com/backyard.studi.o/" rel="noopener" target="_blank">
+              <span class="material-symbols-outlined text-sm">photo_camera</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-pure-black border border-surface-dark-subtle flex items-center justify-center text-on-primary hover:text-primary-container hover:border-primary-container transition-colors"
+              href="mailto:back.yard.studio63@gmail.com">
+              <span class="material-symbols-outlined text-sm">mail</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-pure-black border border-surface-dark-subtle flex items-center justify-center text-on-primary hover:text-primary-container hover:border-primary-container transition-colors"
+              href="https://wa.me/51938153422" rel="noopener" target="_blank">
+              <span class="material-symbols-outlined text-sm">chat</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-pure-black border border-surface-dark-subtle flex items-center justify-center text-on-primary hover:text-primary-container hover:border-primary-container transition-colors"
+              href="mailto:back.yard.studio63@gmail.com">
+              <span class="material-symbols-outlined text-sm">alternate_email</span>
+            </a>
+          </div>
+          <p class="text-label-sm font-label-sm text-surface-variant font-semibold">
+            BACKYARD STUDIO
+          </p>
+          <p class="text-label-sm font-label-sm text-secondary">
+            Producción · Diseño · Estrategia
+          </p>
+        </div>
+      </div>
+      <!-- Bottom Bar Links & Copyright -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <p class="text-body-sm font-body-sm text-surface-light-gray/70">
+          © Backyard Studio. Todos los derechos reservados.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a class="text-primary-container font-bold text-label-sm font-label-sm" href="#hero">Inicio</a>
+          <a class="text-surface-light-gray hover:text-primary-container text-label-sm font-label-sm transition-colors duration-200"
+            href="#servicios">Servicios</a>
+          <a class="text-surface-light-gray hover:text-primary-container text-label-sm font-label-sm transition-colors duration-200"
+            href="#metodo">Método</a>
+          <a class="text-surface-light-gray hover:text-primary-container text-label-sm font-label-sm transition-colors duration-200"
+            href="#clientes">Clientes</a>
+          <a class="text-surface-light-gray hover:text-primary-container text-label-sm font-label-sm transition-colors duration-200"
+            href="#testimonios">Testimonios</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Floating WhatsApp Action Button -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-2 group">
+    <div
+      class="hidden md:block bg-pure-black text-on-primary text-label-sm font-label-sm py-2 px-3 rounded-lg border border-surface-dark-subtle shadow-xl opacity-0 group-hover:opacity-100 transition-opacity">
+      ¿Hablamos por WhatsApp?
+    </div>
+    <a aria-label="WhatsApp Backyard Studio"
+      class="w-14 h-14 bg-primary-container hover:bg-yellow-deep text-pure-black rounded-full flex items-center justify-center border-2 border-pure-black custom-hard-shadow hover:scale-105 active:scale-95 transition-transform"
+      href="https://wa.me/51938153422?text=%C2%A1Hola%20Backyard%20Studio!%20Quiero%20conocer%20sus%20servicios"
+      rel="noopener noreferrer" target="_blank">
+      <span class="material-symbols-outlined text-headline-md font-black">chat</span>
+    </a>
+  </div>
+  <!-- Cookie Consent Banner -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-40 bg-pure-black/95 text-on-primary border-t border-surface-dark-subtle p-4 backdrop-blur-md"
+    id="cookie-banner">
+    <div
+      class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-body-sm font-body-sm text-surface-light-gray text-center md:text-left">
+        Usamos cookies en nuestro sitio web para brindarte la experiencia más relevante recordando tus preferencias y
+        visitas repetidas. Al hacer clic en "Aceptar", aceptas el uso de TODAS las cookies.
+        <a class="text-primary-container underline font-bold ml-1" href="#">Leer más</a>
+      </p>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button
+          class="px-4 py-2 text-label-sm font-bold text-surface-light-gray hover:text-on-primary rounded border border-surface-dark-subtle"
+          data-cookie-dismiss>
+          Gestionar cookies
+        </button>
+        <button
+          class="px-5 py-2 bg-primary-container hover:bg-yellow-deep text-pure-black font-label-sm font-black rounded uppercase"
+          data-cookie-dismiss>
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
