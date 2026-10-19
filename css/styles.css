@@ -11,12 +11,12 @@
       -webkit-font-smoothing: antialiased;
     }
     .hero-bg-pattern {
-      background-color: #f5f1ea;
-      background-image: radial-gradient(circle at 80% 20%, rgba(232, 121, 97, 0.2) 0%, transparent 40%),
-                        radial-gradient(circle at 10% 80%, rgba(15, 76, 92, 0.16) 0%, transparent 50%);
+      background-color: #fafafc;
+      background-image: radial-gradient(circle at 80% 20%, rgba(184, 91, 159, 0.16) 0%, transparent 40%),
+                        radial-gradient(circle at 10% 80%, rgba(61, 85, 168, 0.14) 0%, transparent 50%);
     }
     .custom-hard-shadow {
-      box-shadow: 0 4px 0 #16323b;
+      box-shadow: 0 4px 0 #171a43;
     }
     .custom-card-shadow {
       box-shadow: 0 12px 32px -4px rgba(17, 17, 17, 0.05);
