@@ -22,6 +22,64 @@
     .custom-card-shadow {
       box-shadow: 0 12px 32px -4px rgba(17, 17, 17, 0.05);
     }
+    .problem-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      min-height: 7rem;
+      padding: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 0.75rem;
+      background: rgba(255, 255, 255, 0.07);
+      transition: background 200ms ease, transform 200ms ease;
+    }
+    .problem-card:hover {
+      background: rgba(255, 255, 255, 0.13);
+      transform: translateY(-3px);
+    }
+    .problem-card p {
+      color: #ffffff;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .method-steps::before {
+      content: "";
+      position: absolute;
+      top: 3.25rem;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: #b8e52f;
+    }
+    .trust-card {
+      min-height: 11rem;
+      padding: 1.25rem;
+      border: 1px solid #d7d9df;
+      border-radius: 0.75rem;
+      background: #f1f2f4;
+      transition: transform 200ms ease, border-color 200ms ease;
+    }
+    .trust-card:hover {
+      border-color: #171a22;
+      transform: translateY(-3px);
+    }
+    .trust-card .material-symbols-outlined {
+      color: #3e57ad;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .trust-card h3 {
+      color: #171a22;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .trust-card p {
+      margin-top: 0.6rem;
+      color: #5c606b;
+      font-size: 0.875rem;
+      line-height: 1.45;
+    }
     .services-grid > div:nth-child(1) {
       background: #3e57ad;
       color: #ffffff;
@@ -53,4 +111,167 @@
     .services-grid > div:nth-child(-n+6) h3,
     .services-grid > div:nth-child(-n+6) span {
       color: inherit;
+    }
+    .portfolio-carousel {
+      position: relative;
+      max-width: 980px;
+      margin-inline: auto;
+    }
+    .carousel-track {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 8;
+      border: 3px solid #171a22;
+      border-radius: 1rem;
+      background: #171a22;
+    }
+    .carousel-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.04);
+      transition: opacity 600ms ease, transform 700ms ease, visibility 600ms ease;
+    }
+    .carousel-slide.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+    .carousel-slide::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 35%, rgba(23, 26, 34, 0.9) 100%);
+      pointer-events: none;
+    }
+    .carousel-slide::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      background: rgba(23, 26, 34, 0);
+      transition: background 300ms ease;
+      pointer-events: none;
+    }
+    .carousel-slide:hover::before,
+    .carousel-slide:focus-within::before {
+      background: rgba(23, 26, 34, 0.48);
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 500ms ease;
+    }
+    .carousel-slide:hover img,
+    .carousel-slide:focus-within img {
+      transform: scale(1.04);
+    }
+    .carousel-overlay {
+      position: absolute;
+      z-index: 2;
+      inset: auto 12% 12% 12%;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 300ms ease, transform 300ms ease;
+    }
+    .carousel-slide:hover .carousel-overlay,
+    .carousel-slide:focus-within .carousel-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .carousel-overlay h3 {
+      margin: 0.35rem 0 0.75rem;
+      font-size: clamp(1.5rem, 3vw, 2.75rem);
+      line-height: 1;
+      font-weight: 900;
+    }
+    .carousel-overlay p {
+      max-width: 34rem;
+      margin: 0 0 1rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .carousel-overlay a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.65rem 0.9rem;
+      border-radius: 0.5rem;
+      background: #ffdf27;
+      color: #171a22;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .carousel-overlay .material-symbols-outlined {
+      font-size: 1rem;
+    }
+    .carousel-zone {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      width: 16%;
+      border: 0;
+      background: transparent;
+      color: transparent;
+      cursor: pointer;
+      transition: background 250ms ease, color 250ms ease;
+    }
+    .carousel-zone:hover,
+    .carousel-zone:focus-visible {
+      color: #fff;
+      outline: none;
+    }
+    .carousel-zone-prev {
+      left: 0;
+      border-radius: 1rem 0 0 1rem;
+    }
+    .carousel-zone-next {
+      right: 0;
+      border-radius: 0 1rem 1rem 0;
+    }
+    .carousel-zone .material-symbols-outlined {
+      font-size: 2.25rem;
+    }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.65rem;
+      margin-top: 1.5rem;
+    }
+    .carousel-dots button {
+      width: 3.25rem;
+      height: 0.45rem;
+      border: 0;
+      border-radius: 999px;
+      background: #c7b1fa;
+      cursor: pointer;
+      transition: background 250ms ease, transform 250ms ease;
+    }
+    .carousel-dots button:hover,
+    .carousel-dots button.is-active {
+      background: #3e57ad;
+      transform: scaleY(1.35);
+    }
+    @media (max-width: 640px) {
+      .method-steps::before {
+        display: none;
+      }
+      .carousel-track {
+        aspect-ratio: 4 / 5;
+      }
+      .carousel-overlay {
+        inset: auto 10% 10% 10%;
+        opacity: 1;
+        transform: none;
+      }
+      .carousel-zone {
+        width: 20%;
+      }
     }
