@@ -79,18 +79,18 @@ tailwind.config = {
             "margin-mobile": "1.25rem"
           },
           "fontFamily": {
-            "display-hero-mobile": ["Montserrat"],
-            "headline-xl-mobile": ["Montserrat"],
-            "label-lg": ["Montserrat"],
-            "body-lg": ["Montserrat"],
-            "headline-xl": ["Montserrat"],
-            "body-md": ["Montserrat"],
-            "headline-sm": ["Montserrat"],
-            "body-sm": ["Montserrat"],
-            "headline-lg": ["Montserrat"],
-            "label-sm": ["Montserrat"],
-            "display-hero": ["Montserrat"],
-            "headline-md": ["Montserrat"]
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-xl-mobile": ["Space Grotesk", "sans-serif"],
+            "label-lg": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-xl": ["Space Grotesk", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"]
           },
           "fontSize": {
             "display-hero-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "900" }],

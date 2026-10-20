@@ -12,6 +12,29 @@
     }
     body {
       overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display-hero,
+    .font-headline-xl,
+    .font-headline-lg,
+    .font-headline-md,
+    .font-headline-sm {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.025em;
+    }
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition: opacity 700ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+      transition-delay: var(--reveal-delay, 0ms);
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .hero-bg-pattern {
       background-color: #f8f8f8;
@@ -129,6 +152,11 @@
       }
     }
     @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
       .testimonials-track {
         animation-play-state: paused;
       }

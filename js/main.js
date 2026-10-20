@@ -34,6 +34,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Portfolio carousel with autoplay, directional zones, dots, and keyboard support.
 document.addEventListener('DOMContentLoaded', () => {
+  const revealTargets = [
+    'body > section',
+    '.problem-card',
+    '.services-grid > div',
+    '.creative-value-intro',
+    '.creative-value-card',
+    '.method-steps > div',
+    '.trust-card',
+    '[data-contact-form]'
+  ];
+  const revealElements = document.querySelectorAll(revealTargets.join(', '));
+
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealElements.forEach((element, index) => {
+      element.classList.add('reveal-on-scroll');
+      element.style.setProperty('--reveal-delay', `${(index % 4) * 80}ms`);
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+  }
+
   document.querySelectorAll('[data-contact-form]').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
