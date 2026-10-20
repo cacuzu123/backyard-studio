@@ -10,6 +10,9 @@
       direction: ltr;
       -webkit-font-smoothing: antialiased;
     }
+    body {
+      overflow-x: hidden;
+    }
     .hero-bg-pattern {
       background-color: #f8f8f8;
       background-image: radial-gradient(circle at 82% 18%, rgba(182, 90, 157, 0.24) 0%, transparent 38%),
@@ -53,6 +56,16 @@
     }
     .creative-value-card p {
       color: #5c606b;
+    }
+    .method-steps > div {
+      min-width: 0;
+    }
+    .method-steps h3 {
+      width: 100%;
+      max-width: 100%;
+      font-size: clamp(1rem, 1.65vw, 1.25rem);
+      line-height: 1.1;
+      overflow-wrap: break-word;
     }
     .trust-card {
       min-height: 11rem;

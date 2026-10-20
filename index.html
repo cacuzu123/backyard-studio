@@ -421,7 +421,7 @@
           Un proceso simple, colaborativo y pensado para que cada decisión tenga intención.
         </p>
       </div>
-      <div class="method-steps grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative">
+      <div class="method-steps grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
         <!-- Step 1 -->
         <div
           class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
@@ -449,24 +449,6 @@
           </div>
           <div
             class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
-            <span class="material-symbols-outlined text-headline-md">search</span>
-          </div>
-          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
-            Diseñamos
-          </h3>
-          <p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Encontramos el mensaje y la dirección creativa.
-          </p>
-        </div>
-        <!-- Step 3 -->
-        <div
-          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div
-            class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
-            3
-          </div>
-          <div
-            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
             <span class="material-symbols-outlined text-headline-md">verified_user</span>
           </div>
           <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
@@ -476,9 +458,9 @@
             Diseñamos el sistema visual y el plan de contenido.
           </p>
         </div>
-        <!-- Step 4 -->
+        <!-- Step 3 -->
         <div class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">4</div>
+          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">3</div>
           <div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
             <span class="material-symbols-outlined text-headline-md">movie</span>
           </div>
@@ -487,9 +469,9 @@
             Grabamos, diseñamos y editamos cada pieza con intención.
           </p>
         </div>
-        <!-- Step 5 -->
+        <!-- Step 4 -->
         <div class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">5</div>
+          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">4</div>
           <div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
             <span class="material-symbols-outlined text-headline-md">rocket_launch</span>
           </div>
@@ -710,8 +692,8 @@
           <div>
             <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
             <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
-              Acompañamos la producción y gestión de contenido para que cada canal tenga una intención clara y coherente.
-              tecnológico que buscábamos para dar el siguiente salto.
+              Acompañamos la producción y gestión de contenido para que cada canal tenga una intención clara y coherente,
+              desde la primera idea hasta la publicación.
             </p>
           </div>
           <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
@@ -732,8 +714,8 @@
           <div>
             <div class="text-primary-container font-serif text-5xl leading-none mb-4 font-black">“</div>
             <p class="font-body-md text-body-md text-pure-black leading-relaxed font-medium mb-6">
-              Desde una identidad visual hasta una campaña completa, construimos herramientas que tu equipo pueda usar.
-              redes sociales creando una nueva línea gráfica. Capturaron nuestra esencia.
+              Desde una identidad visual hasta una campaña completa, creamos herramientas que tu equipo puede usar
+              para comunicar con una línea gráfica coherente.
             </p>
           </div>
           <div class="pt-4 border-t border-border-subtle flex items-center gap-3">
@@ -811,37 +793,37 @@
                 <span class="material-symbols-outlined text-headline-md">support_agent</span>
               </div>
             </div>
-            <form class="space-y-4"
-              onsubmit="event.preventDefault(); alert('Horario seleccionado. Redirigiendo a Calendly...');">
+            <form class="space-y-4" data-contact-form data-form-type="conversation">
               <div>
                 <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu
                   nombre</label>
                 <input
                   class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
-                  placeholder="Ej. Carlos Mendoza" required="" type="text" />
+                  name="name" placeholder="Ej. Carlos Mendoza" required="" type="text" />
               </div>
               <div>
                 <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu correo
                   electrónico</label>
                 <input
                   class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
-                  placeholder="carlos@empresa.com" required="" type="email" />
+                  name="email" placeholder="carlos@empresa.com" required="" type="email" />
               </div>
               <div class="flex items-start gap-3 pt-2">
                 <input
                   class="w-5 h-5 rounded border-2 border-pure-black text-primary-container focus:ring-primary-container mt-0.5"
                   id="term1" required="" type="checkbox" />
                 <label class="text-body-sm text-secondary leading-snug" for="term1">
-                  Acepto la <a class="text-pure-black font-bold underline hover:text-primary" href="#">política de
+                  Acepto la                   <a class="text-pure-black font-bold underline hover:text-primary" href="#politicas">política de
                     privacidad</a>.
                 </label>
               </div>
               <button
                 class="w-full mt-4 bg-primary-container hover:bg-yellow-deep text-pure-black font-label-lg font-black uppercase py-4 rounded-lg transition-transform active:scale-95 border-2 border-pure-black custom-hard-shadow flex items-center justify-center gap-2"
                 type="submit">
-                Escoger horario <span class="material-symbols-outlined font-bold text-body-md">calendar_today</span>
+                Continuar por WhatsApp <span class="material-symbols-outlined font-bold text-body-md">chat</span>
               </button>
             </form>
+            <p class="form-status mt-3 text-body-sm font-semibold" data-form-status role="status"></p>
           </div>
         </div>
         <!-- Opción 2: Agendar para cotizar -->
@@ -864,26 +846,25 @@
                 <span class="material-symbols-outlined text-headline-md">receipt_long</span>
               </div>
             </div>
-            <form class="space-y-4"
-              onsubmit="event.preventDefault(); alert('Requerimiento registrado. Mostrando agenda disponible...');">
+            <form class="space-y-4" data-contact-form data-form-type="quote">
               <div>
                 <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu
                   nombre</label>
                 <input
                   class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
-                  placeholder="Ej. Ana Lucía Soto" required="" type="text" />
+                  name="name" placeholder="Ej. Ana Lucía Soto" required="" type="text" />
               </div>
               <div>
                 <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Tu correo
                   electrónico</label>
                 <input
                   class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium"
-                  placeholder="ana@organizacion.pe" required="" type="email" />
+                  name="email" placeholder="ana@organizacion.pe" required="" type="email" />
               </div>
               <div>
                 <label class="block text-label-sm font-label-sm uppercase font-bold text-pure-black mb-1.5">Servicio de
                   interés</label>
-                <select
+                <select name="service"
                   class="w-full px-4 py-3 rounded-lg border-2 border-border-subtle focus:border-pure-black focus:ring-2 focus:ring-primary-container text-body-md font-medium bg-surface-container-lowest">
                   <option value="Producción de video">Producción de video</option>
                   <option value="Diseño gráfico y branding">Diseño gráfico y branding</option>
@@ -896,18 +877,35 @@
                   class="w-5 h-5 rounded border-2 border-pure-black text-primary-container focus:ring-primary-container mt-0.5"
                   id="term2" required="" type="checkbox" />
                 <label class="text-body-sm text-secondary leading-snug" for="term2">
-                  Acepto la <a class="text-pure-black font-bold underline hover:text-primary" href="#">política de
+                  Acepto la                   <a class="text-pure-black font-bold underline hover:text-primary" href="#politicas">política de
                     privacidad</a>.
                 </label>
               </div>
               <button
                 class="w-full mt-4 bg-pure-black hover:bg-surface-dark text-on-primary font-label-lg font-black uppercase py-4 rounded-lg transition-transform active:scale-95 border-2 border-pure-black custom-hard-shadow flex items-center justify-center gap-2"
                 type="submit">
-                Escoger horario <span
-                  class="material-symbols-outlined font-bold text-body-md text-primary-container">calendar_today</span>
+                Solicitar propuesta <span
+                  class="material-symbols-outlined font-bold text-body-md text-primary-container">chat</span>
               </button>
             </form>
+            <p class="form-status mt-3 text-body-sm font-semibold" data-form-status role="status"></p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Legal information -->
+  <section class="py-space-2xl bg-surface-dark text-on-primary" id="politicas">
+    <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin">
+      <div class="flex items-start gap-4">
+        <span class="material-symbols-outlined text-primary-container text-headline-md">gavel</span>
+        <div>
+          <h2 class="font-headline-md text-headline-md font-black">Información legal</h2>
+          <p class="text-body-sm text-surface-light-gray mt-2 leading-relaxed">
+            Para solicitar nuestra política de privacidad, política de cookies, términos y condiciones o condiciones de contratación,
+            escríbenos a <a class="text-primary-container font-bold underline" href="mailto:back.yard.studio63@gmail.com">back.yard.studio63@gmail.com</a>.
+            Te enviaremos la información correspondiente antes de iniciar cualquier servicio.
+          </p>
         </div>
       </div>
     </div>
@@ -946,19 +944,19 @@
           <ul class="space-y-2.5">
             <li><a
                 class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#">Política de privacidad</a></li>
+                href="#politicas">Política de privacidad</a></li>
             <li><a
                 class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#">Términos y condiciones</a></li>
+                href="#politicas">Términos y condiciones</a></li>
             <li><a
                 class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#">Política de Cookies</a></li>
+                href="#politicas">Política de Cookies</a></li>
             <li><a
                 class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#">Política de términos y condiciones de contratación</a></li>
+                href="#politicas">Condiciones de contratación</a></li>
             <li class="pt-2">
               <a class="inline-flex items-center gap-2 text-primary-container font-label-sm hover:underline font-bold"
-                href="#">
+                href="mailto:back.yard.studio63@gmail.com?subject=Libro%20de%20reclamaciones">
                 <span class="material-symbols-outlined text-sm">menu_book</span>
                 Libro de reclamaciones
               </a>
@@ -1062,7 +1060,7 @@
       <p class="text-body-sm font-body-sm text-surface-light-gray text-center md:text-left">
         Usamos cookies en nuestro sitio web para brindarte la experiencia más relevante recordando tus preferencias y
         visitas repetidas. Al hacer clic en "Aceptar", aceptas el uso de TODAS las cookies.
-        <a class="text-primary-container underline font-bold ml-1" href="#">Leer más</a>
+        <a class="text-primary-container underline font-bold ml-1" href="#politicas">Leer más</a>
       </p>
       <div class="flex items-center gap-3 flex-shrink-0">
         <button

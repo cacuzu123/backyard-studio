@@ -34,6 +34,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Portfolio carousel with autoplay, directional zones, dots, and keyboard support.
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const service = String(data.get('service') || 'Conversación sobre un proyecto').trim();
+      const status = form.parentElement.querySelector('[data-form-status]');
+      const formType = form.getAttribute('data-form-type') === 'quote'
+        ? 'Quiero solicitar una propuesta'
+        : 'Quiero conversar sobre una idea';
+      const message = `${formType}.\n\nNombre: ${name}\nCorreo: ${email}\nServicio: ${service}`;
+      const whatsappUrl = `https://wa.me/51938153422?${new URLSearchParams({ text: message })}`;
+
+      if (status) {
+        status.textContent = 'Abriendo WhatsApp para continuar la conversación...';
+        status.classList.remove('text-red-600');
+        status.classList.add('text-green-700');
+      }
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    });
+  });
+
   document.querySelectorAll('[data-testimonials]').forEach((marquee) => {
     const track = marquee.querySelector('.testimonials-track');
     if (!track) return;
