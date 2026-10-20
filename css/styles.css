@@ -42,15 +42,6 @@
       font-weight: 600;
       line-height: 1.45;
     }
-    .method-steps::before {
-      content: "";
-      position: absolute;
-      top: 3.25rem;
-      left: 10%;
-      right: 10%;
-      height: 2px;
-      background: #b8e52f;
-    }
     .trust-card {
       min-height: 11rem;
       padding: 1.25rem;
@@ -304,9 +295,6 @@
       }
       .testimonials-track {
         animation-duration: 48s;
-      }
-      .method-steps::before {
-        display: none;
       }
       .carousel-track {
         aspect-ratio: 4 / 5;
