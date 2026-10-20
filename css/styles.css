@@ -42,6 +42,18 @@
       font-weight: 600;
       line-height: 1.45;
     }
+    .creative-value-section {
+      background-image: linear-gradient(90deg, #f8f8f8 0%, #f8f8f8 52%, #eef0f3 100%);
+    }
+    .creative-value-intro h2 {
+      line-height: 0.98;
+    }
+    .creative-value-card > div:first-child {
+      flex: 1;
+    }
+    .creative-value-card p {
+      color: #5c606b;
+    }
     .trust-card {
       min-height: 11rem;
       padding: 1.25rem;
@@ -109,9 +121,9 @@
       }
     }
     .services-grid > div:nth-child(1) {
-      background: #3e57ad;
+      background: #405bb5;
       color: #ffffff;
-      border-color: #3e57ad;
+      border-color: #405bb5;
     }
     .services-grid > div:nth-child(2) {
       background: #ffffff;
@@ -123,8 +135,8 @@
       border-color: #b65a9d;
     }
     .services-grid > div:nth-child(4) {
-      background: #b8e52f;
-      border-color: #b8e52f;
+      background: #f28c28;
+      border-color: #f28c28;
     }
     .services-grid > div:nth-child(5) {
       background: #20242c;
@@ -288,6 +300,9 @@
       transform: scaleY(1.35);
     }
     @media (max-width: 640px) {
+      .creative-value-section {
+        background: #f8f8f8;
+      }
       .testimonials-marquee {
         mask-image: none;
         overflow-x: auto;
