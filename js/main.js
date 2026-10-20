@@ -34,6 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Portfolio carousel with autoplay, directional zones, dots, and keyboard support.
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-testimonials]').forEach((marquee) => {
+    const track = marquee.querySelector('.testimonials-track');
+    if (!track) return;
+
+    Array.from(track.children).forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  });
+
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     const slides = Array.from(carousel.querySelectorAll('[data-slide]'));
     const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
