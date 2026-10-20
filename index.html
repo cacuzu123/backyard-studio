@@ -101,27 +101,30 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <section class="hero-bg-pattern relative w-full pt-space-xl pb-space-3xl overflow-hidden border-b border-pure-black"
-    id="hero">
+  <section class="hero-bg-pattern hero-stage relative w-full min-h-[calc(100vh-5rem)] pt-space-xl pb-space-3xl overflow-hidden border-b border-pure-black"
+    data-hero-stage id="hero">
+    <svg class="hero-line-field" aria-hidden="true" data-hero-lines></svg>
+    <div class="hero-orbit hero-orbit-one" data-hero-orbit></div>
+    <div class="hero-orbit hero-orbit-two" data-hero-orbit></div>
     <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="hero-columns flex flex-col lg:flex-row gap-8 items-center">
         <!-- Left Content -->
-        <div class="lg:col-span-7 flex flex-col justify-center text-pure-black">
+        <div class="hero-copy lg:col-span-7 flex flex-col justify-center text-pure-black">
           <div
             class="inline-flex items-center gap-2 bg-pure-black text-on-primary px-4 py-1.5 rounded-full text-label-sm font-label-sm font-bold w-fit mb-6 shadow-sm uppercase tracking-wider">
             <span class="material-symbols-outlined text-sm font-bold">auto_awesome</span> Estudio de creación digital
           </div>
           <h1
             class="font-display-hero text-headline-xl md:text-display-hero tracking-tight leading-none uppercase font-black text-pure-black mb-4">
-            Convertimos tu idea <br />
-            <span class="relative inline-block text-pure-black">
+            <span class="block">Convertimos tu idea</span>
+            <span class="relative block w-fit text-pure-black">
               en contenido
               <svg class="absolute -bottom-2 left-0 w-full h-3 text-pure-black fill-current" preserveaspectratio="none"
                 viewbox="0 0 100 20">
                 <path d="M0 10 Q 50 20 100 10 Q 50 0 0 10 Z"></path>
               </svg>
-            </span><br />
-            <span class="text-headline-lg md:text-headline-xl font-extrabold">que conecta.</span>
+            </span>
+            <span class="block text-headline-lg md:text-headline-xl font-extrabold">que conecta.</span>
           </h1>
           <p class="font-body-lg text-body-lg text-surface-dark font-medium max-w-xl mb-8 mt-2 leading-relaxed">
             Producción audiovisual, branding y contenido para marcas que quieren verse mejor y conectar con su audiencia.
@@ -154,9 +157,9 @@
           </div>
         </div>
         <!-- Right Character Visual Representation -->
-        <div class="lg:col-span-5 flex justify-center relative">
+        <div class="hero-visual-wrap lg:col-span-5 flex justify-center relative" data-hero-visual>
           <div
-            class="relative w-full max-w-md aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border-4 border-pure-black bg-surface-dark custom-hard-shadow flex items-center justify-center">
+            class="hero-visual relative w-full max-w-md aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border-4 border-pure-black bg-surface-dark custom-hard-shadow flex items-center justify-center">
             <img class="w-full h-full object-cover"
               data-alt="Editorial image representing a creative studio, visual storytelling and content production."
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2reenJBirt61eDltUFYRdquCBLBlKwlDQMxAGiDkxs-7usjDnAu4AtRXtcZm8avUftSLZnrdoeKolBXRbmHIfcXJgYxcic26un5tTUSKERcxhbkPzoLhiRMefy_UPkJOWYmuiMu6Po9x4cJJUTdVm4GxXgHrXZDTD0GezTF3LsRyhr4sOQJJ6j60o7ONKB-7-7FPjh0_X0DX1lxVHSrvu7sr5OfPwVBZMRsvQLwF9IGD0KXcGWnMI" />
@@ -168,6 +171,7 @@
               </div>
               <span class="material-symbols-outlined text-primary-container text-headline-md">visibility</span>
             </div>
+            <span class="hero-visual-index">BACKYARD / 01</span>
           </div>
         </div>
       </div>
@@ -409,79 +413,31 @@
       </div>
     </div>
   </section>
-  <!-- Metodología en 5 pasos -->
+  <!-- Proceso dinámico -->
   <section class="py-space-3xl bg-surface-container-lowest" id="metodo">
     <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
-      <div class="text-center max-w-3xl mx-auto mb-space-2xl">
-        <span
-          class="inline-block px-3 py-1 rounded-full bg-surface-light-gray border border-border-subtle text-pure-black font-label-sm font-bold mb-3 uppercase tracking-wider">
-          Así trabajamos
-        </span>
-        <h2 class="font-headline-xl text-headline-xl text-pure-black uppercase font-black tracking-tight">
-          De la idea a la pieza final
-        </h2>
-        <p class="font-body-lg text-body-lg text-secondary font-medium mt-2">
-          Un proceso simple, colaborativo y pensado para que cada decisión tenga intención.
-        </p>
+      <div class="process-section-heading">
+        <h2>NUESTRO PROCESO</h2>
       </div>
-      <div class="method-steps grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-        <!-- Step 1 -->
-        <div
-          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div
-            class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
-            1
-          </div>
-          <div
-            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
-            <span class="material-symbols-outlined text-headline-md">lightbulb</span>
-          </div>
-          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
-            Escuchamos
-          </h3>
-          <p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Entendemos tu negocio, audiencia y objetivo.
-          </p>
-        </div>
-        <!-- Step 2 -->
-        <div
-          class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div
-            class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">
-            2
-          </div>
-          <div
-            class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
-            <span class="material-symbols-outlined text-headline-md">verified_user</span>
-          </div>
-          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">
-            Diseñamos
-          </h3>
-          <p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Diseñamos el sistema visual y el plan de contenido.
-          </p>
-        </div>
-        <!-- Step 3 -->
-        <div class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">3</div>
-          <div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
-            <span class="material-symbols-outlined text-headline-md">movie</span>
-          </div>
-          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">Producimos</h3>
-          <p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Grabamos, diseñamos y editamos cada pieza con intención.
-          </p>
-        </div>
-        <!-- Step 4 -->
-        <div class="bg-surface border border-border-subtle rounded-xl p-space-xl text-center flex flex-col items-center relative hover:border-pure-black transition-colors">
-          <div class="w-12 h-12 rounded-full bg-white text-pure-black font-display-hero text-headline-sm font-black flex items-center justify-center mb-6 border-2 border-pure-black shadow-sm">4</div>
-          <div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-pure-black mb-5">
-            <span class="material-symbols-outlined text-headline-md">rocket_launch</span>
-          </div>
-          <h3 class="font-headline-md text-headline-md font-extrabold text-pure-black mb-3">Activamos</h3>
-          <p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Entregamos contenido listo para publicar y hacerte notar.
-          </p>
+      <div class="process-orbit reveal-on-scroll" data-process-orbit>
+        <svg class="process-orbit-lines" aria-hidden="true" data-process-lines></svg>
+        <div class="process-orbit-node" aria-live="polite" data-process-node>
+          <span class="process-orbit-number-frame" aria-hidden="true">
+            <span class="process-orbit-number process-orbit-number-current" data-process-number>01</span>
+            <span class="process-orbit-number process-orbit-number-next" data-process-next-number>02</span>
+          </span>
+          <span class="process-orbit-icon-frame" aria-hidden="true">
+            <span class="material-symbols-outlined process-orbit-icon process-orbit-icon-current"
+              data-process-icon>lightbulb</span>
+            <span class="material-symbols-outlined process-orbit-icon process-orbit-icon-next"
+              data-process-next-icon>palette</span>
+          </span>
+          <span class="process-orbit-label-frame" aria-hidden="true">
+            <span class="process-orbit-node-label process-orbit-node-label-current"
+              data-process-node-label>Escuchamos</span>
+            <span class="process-orbit-node-label process-orbit-node-label-next"
+              data-process-next-label>Diseñamos</span>
+          </span>
         </div>
       </div>
     </div>
@@ -897,22 +853,6 @@
       </div>
     </div>
   </section>
-  <!-- Legal information -->
-  <section class="py-space-2xl bg-surface-dark text-on-primary" id="politicas">
-    <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin">
-      <div class="flex items-start gap-4">
-        <span class="material-symbols-outlined text-primary-container text-headline-md">gavel</span>
-        <div>
-          <h2 class="font-headline-md text-headline-md font-black">Información legal</h2>
-          <p class="text-body-sm text-surface-light-gray mt-2 leading-relaxed">
-            Para solicitar nuestra política de privacidad, política de cookies, términos y condiciones o condiciones de contratación,
-            escríbenos a <a class="text-primary-container font-bold underline" href="mailto:back.yard.studio63@gmail.com">back.yard.studio63@gmail.com</a>.
-            Te enviaremos la información correspondiente antes de iniciar cualquier servicio.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
   <!-- Footer (Shared Component from JSON) -->
   <footer class="bg-surface-dark border-t border-surface-dark-subtle text-on-primary">
     <div class="w-full px-margin-mobile md:px-margin py-space-2xl max-w-7xl mx-auto">
@@ -947,23 +887,7 @@
           <ul class="space-y-2.5">
             <li><a
                 class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#politicas">Política de privacidad</a></li>
-            <li><a
-                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#politicas">Términos y condiciones</a></li>
-            <li><a
-                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#politicas">Política de Cookies</a></li>
-            <li><a
-                class="text-surface-light-gray font-label-sm hover:text-primary-container transition-colors duration-200"
-                href="#politicas">Condiciones de contratación</a></li>
-            <li class="pt-2">
-              <a class="inline-flex items-center gap-2 text-primary-container font-label-sm hover:underline font-bold"
-                href="mailto:back.yard.studio63@gmail.com?subject=Libro%20de%20reclamaciones">
-                <span class="material-symbols-outlined text-sm">menu_book</span>
-                Libro de reclamaciones
-              </a>
-            </li>
+                href="pages/cookies.html">Política de Cookies</a></li>
           </ul>
         </div>
         <!-- Col 3: Contacto -->
@@ -1061,20 +985,19 @@
     <div
       class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-body-sm font-body-sm text-surface-light-gray text-center md:text-left">
-        Usamos cookies en nuestro sitio web para brindarte la experiencia más relevante recordando tus preferencias y
-        visitas repetidas. Al hacer clic en "Aceptar", aceptas el uso de TODAS las cookies.
-        <a class="text-primary-container underline font-bold ml-1" href="#politicas">Leer más</a>
+        Actualmente no usamos cookies propias ni herramientas de seguimiento. Consulta nuestra
+        <a class="text-primary-container underline font-bold ml-1" href="pages/cookies.html">política de cookies</a>.
       </p>
       <div class="flex items-center gap-3 flex-shrink-0">
         <button
           class="px-4 py-2 text-label-sm font-bold text-surface-light-gray hover:text-on-primary rounded border border-surface-dark-subtle"
           data-cookie-dismiss>
-          Gestionar cookies
+          Cerrar
         </button>
         <button
           class="px-5 py-2 bg-primary-container hover:bg-yellow-deep text-pure-black font-label-sm font-black rounded uppercase"
           data-cookie-dismiss>
-          Aceptar
+          Entendido
         </button>
       </div>
     </div>
